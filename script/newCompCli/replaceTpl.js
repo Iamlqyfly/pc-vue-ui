@@ -72,7 +72,7 @@ const routerTplReplacer = (listFileContent) => {
 // 更新 install.ts
 const installTsTplReplacer = (listFileContent) => {
   const installFileFrom = './template/install.ts.tpl'
-  const installFileTo = '../../packages/index.ts' // 这里没有写错，别慌
+  const installFileTo = '../../packages/index.ts'
   const installFileTpl = fs.readFileSync(resolve(__dirname, installFileFrom), 'utf-8')
   const installMeta = {
     importPlugins: listFileContent.map(({ compName }) => `import { ${compName}Plugin } from './${compName}';`).join('\n'),
