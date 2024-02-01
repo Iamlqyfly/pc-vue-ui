@@ -1,0 +1,42 @@
+{
+  "name": "pc-vue-ui",
+  "private": true,
+  "version": "0.0.",
+  "main": "./dist/q-ui.umd.js",
+  "module": "./dist/q-ui.es.js",
+  "typings": "./dist/packages/index.d.ts",
+  "scripts": {
+    "dev": "vite --config ./build/base.config.ts",
+    "build": "vue-tsc && vite build",
+    "preview": "vite preview",
+    "gen": "node ./script/genNewComp/index.js",
+    "build:doc": "vue-tsc --noEmit && vite build --config ./build/doc.config.ts && node script/copyDir.js",
+    "build:lib": "vue-tsc --noEmit && vite build --config ./build/lib.config.ts",
+    "git": "git pull && git add . && git commit -m ",
+    "postgit": "git push"
+  },
+  "files": [
+    "dist",
+    "docs",
+    "README.md"
+  ],
+  "dependencies": {
+    "prismjs": "^1.25.0",
+    "vue": "^3.2.23"
+  },
+  "devDependencies": {
+    "@types/node": "^16.11.12",
+    "@vitejs/plugin-vue": "^1.10.2",
+    "fs-extra": "^10.0.0",
+    "handlebars": "^4.7.7",
+    "inquirer": "^8.2.0",
+    "less": "^4.1.2",
+    "typescript": "^4.4.4",
+    "vite": "^2.7.0",
+    "vite-plugin-copy": "^0.1.6",
+    "vite-plugin-dts": "^0.9.6",
+    "vite-plugin-md": "^0.11.4",
+    "vue-router": "^4.0.12",
+    "vue-tsc": "^0.28.10"
+  }
+}
