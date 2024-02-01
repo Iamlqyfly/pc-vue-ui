@@ -1,7 +1,8 @@
 <template>
     <div>
-      <q-button >First Button</q-button>
-      <q-button >Second Button</q-button>
+      <q-button type="primary">primary Button</q-button>
+      <q-button type="warning">warning Button</q-button>
+      <q-button type="danger">danger Button</q-button>
     </div>
   </template>
   

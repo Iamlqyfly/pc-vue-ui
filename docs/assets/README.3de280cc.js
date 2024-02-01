@@ -1,0 +1,1 @@
+import{c as o,o as s,d as t}from"./index.95f484a4.js";const n={class:"markdown-body"},c=t("h1",null,"\u6587\u672C",-1),_=t("p",null,"\u9ED8\u8BA4\uFF1A\u8FD9\u662F\u4E00\u4E2A\u65B0\u7EC4\u4EF6",-1),a=[c,_],i={__name:"README",setup(r,{expose:e}){return e({frontmatter:{}}),(l,m)=>(s(),o("div",n,a))}};export{i as default};

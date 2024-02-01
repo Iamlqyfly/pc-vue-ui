@@ -10,6 +10,6 @@
 
 <style scoped>
 .q-text {
-  
+  color: darkcyan;
 }
 </style>
